@@ -1,0 +1,29 @@
+pkgbase = xlibre-video-vmware
+	pkgdesc = XLibre vmware video driver
+	pkgver = 13.4.0.1
+	pkgrel = 1
+	url = https://github.com/X11Libre/xf86-video-vmware
+	arch = aarch64
+	arch = x86_64
+	groups = xlibre-drivers
+	license = MIT AND X11
+	makedepends = xlibre-xserver-devel
+	makedepends = xorgproto
+	makedepends = X-ABI-VIDEODRV_VERSION=28.0
+	depends = mesa
+	depends = systemd-libs
+	depends = libxext
+	depends = libx11
+	depends = libdrm
+	depends = glibc
+	provides = xf86-video-vmware
+	conflicts = xf86-video-vmware
+	conflicts = xorg-server<1.20.0
+	conflicts = X-ABI-VIDEODRV_VERSION<28
+	conflicts = X-ABI-VIDEODRV_VERSION>=29
+	options = !emptydirs
+	options = !debug
+	source = xf86-video-vmware-xlibre-xf86-video-vmware-13.4.0.1.tar.gz::https://github.com/X11Libre/xf86-video-vmware/archive/refs/tags/xlibre-xf86-video-vmware-13.4.0.1.tar.gz
+	b2sums = ee9d2276589f775c5007b26961e50ca369c7250ade1b61fe1d2bdb21e18fe774596c8ce05cff5211ef6484ce9dcc8ead7ea97399d4459a8a8a0159688ad6020a
+
+pkgname = xlibre-video-vmware
