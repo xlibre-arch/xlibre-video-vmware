@@ -3,7 +3,7 @@
 
 _basename="xf86-video-vmware"
 pkgname="${_basename//xf86/xlibre}"
-pkgver=13.4.0.1
+pkgver=13.4.0.2
 pkgrel=1
 pkgdesc="XLibre vmware video driver"
 arch=('aarch64' 'x86_64')
@@ -17,7 +17,7 @@ groups=('xlibre-drivers')
 options=('!emptydirs' '!debug')
 _pkgsrc="${_basename}-xlibre-${_basename}-${pkgver}"
 source=("${_pkgsrc}.tar.gz::${url}/archive/refs/tags/xlibre-${_basename}-${pkgver}.tar.gz")
-b2sums=('ee9d2276589f775c5007b26961e50ca369c7250ade1b61fe1d2bdb21e18fe774596c8ce05cff5211ef6484ce9dcc8ead7ea97399d4459a8a8a0159688ad6020a')
+b2sums=('24e8544b70f52b7433bd76d2ce5c88b7227c78b9e09eb6d0db7c7309b73951c77c71892e6e1124463044f84a2df58e2cb931092a2f5d0ec03db8cc166da7f6a1')
 
 build() {
   # Since pacman 5.0.2-2, hardened flags are now enabled in makepkg.conf
